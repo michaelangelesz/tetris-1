@@ -190,7 +190,7 @@ function playerRotate(dir) {
 }
 
 let dropCounter = 0;
-let dropInterval = 1000;
+let dropInterval = 500;
 
 let lastTime = 0;
 function update(time = 0) {
@@ -220,7 +220,7 @@ document.addEventListener('keydown', event => {
         playerDrop();
     } else if (event.keyCode === 81) {
         playerRotate(-1);
-    } else if (event.keyCode === 87) {
+    } else if (event.keyCode === 38) {
         playerRotate(1);
     }
 });
